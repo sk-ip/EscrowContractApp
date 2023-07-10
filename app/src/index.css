@@ -1,7 +1,9 @@
 body {
   background-color: #eee;
   display: flex;
+  flex-direction: column;
   font-family: 'Muli', sans-serif;
+  margin: 0;
 }
 
 .contract, .existing-contracts {
@@ -10,6 +12,24 @@ body {
   padding: 40px;
   border: 1px solid #ddd;
   background-color: #fff;
+}
+
+.header {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
 }
 
 h1 {
@@ -42,6 +62,10 @@ input[type="text"] {
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.button:disabled {
+  background-color: gray;
 }
 
 .existing-contract ul {
